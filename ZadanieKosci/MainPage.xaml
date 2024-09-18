@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZadanieKosci.MainPage"
+             BackgroundColor="Beige">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="10"
+            Spacing="10">
+            <Label Text="Gra w kości. Autor: 03210312932" BackgroundColor="brown" TextColor="white" FontSize="Large"/>
+            <Button Text="RZUĆ KOŚCMI" Clicked="OnRzucClicked" HorizontalOptions="Center" BackgroundColor="Chocolate"/>
+            <HorizontalStackLayout BackgroundColor="white" HorizontalOptions="Center">
+                <Image Source="empty.png" x:Name="ImgKosc1"/>
+                <Image Source="empty.png" x:Name="ImgKosc2"/>
+                <Image Source="empty.png" x:Name="ImgKosc3"/>
+                <Image Source="empty.png" x:Name="ImgKosc4"/>
+                <Image Source="empty.png" x:Name="ImgKosc5"/>
+            </HorizontalStackLayout>
+            <Label Text="Wynik tego losowania: 0" x:Name="LblWynikLos" HorizontalTextAlignment="Center"/>
+            <Label Text="Wynik całej gry: 0" x:Name="LblWynikGra" HorizontalTextAlignment="Center"/>
+            <Button Text="RESETUJ WYNIK" Clicked="OnResetClicked" BackgroundColor="Chocolate" HorizontalOptions="Center"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
