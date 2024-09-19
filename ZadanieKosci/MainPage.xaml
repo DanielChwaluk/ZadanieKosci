@@ -9,7 +9,7 @@
             Padding="10"
             Spacing="10">
             <Label Text="Gra w kości. Autor: 03210312932" BackgroundColor="brown" TextColor="white" FontSize="Large"/>
-            <Button Text="RZUĆ KOŚCMI" Clicked="OnRzucClicked" HorizontalOptions="Center" BackgroundColor="Chocolate"/>
+            <Button Text="RZUĆ KOŚCMI" HorizontalOptions="Center" BackgroundColor="Chocolate"/>
             <HorizontalStackLayout BackgroundColor="white" HorizontalOptions="Center">
                 <Image Source="empty.png" x:Name="ImgKosc1"/>
                 <Image Source="empty.png" x:Name="ImgKosc2"/>
@@ -19,7 +19,7 @@
             </HorizontalStackLayout>
             <Label Text="Wynik tego losowania: 0" x:Name="LblWynikLos" HorizontalTextAlignment="Center"/>
             <Label Text="Wynik całej gry: 0" x:Name="LblWynikGra" HorizontalTextAlignment="Center"/>
-            <Button Text="RESETUJ WYNIK" Clicked="OnResetClicked" BackgroundColor="Chocolate" HorizontalOptions="Center"/>
+            <Button Text="RESETUJ WYNIK" BackgroundColor="Chocolate" HorizontalOptions="Center"/>
         </VerticalStackLayout>
     </ScrollView>
 
